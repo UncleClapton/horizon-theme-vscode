@@ -285,7 +285,7 @@ module.exports = {
     },
     {
       "name": "Template expressions",
-      "scope": "punctuation.definition.template-expression",
+      "scope": ["punctuation.definition.template-expression", "punctuation.quasi.element"],
       "settings": {
         "foreground": "{{ syntax.lavender }}{{ alpha.high }}"
       }
