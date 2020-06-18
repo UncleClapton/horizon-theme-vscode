@@ -2,8 +2,8 @@
 const fs = require('fs')
 const mustache = require('mustache')
 
-const globals = require('../dark/globals.json')
-const template = JSON.stringify(require(`${__dirname}/template.json`))
+const globals = require(`${__dirname}/globals.js`)
+const template = JSON.stringify(require(`${__dirname}/template.js`))
 const themeNames = ['horizon-clapton']
 
 themeNames.forEach((themeName) => {
