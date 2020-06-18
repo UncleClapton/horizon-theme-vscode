@@ -8,7 +8,10 @@
   "license": "MIT",
   "icon": "logo.png",
   "scripts": {
-    "build": "node src/clapton/build"
+    "build": "yarn run build:dark && yarn run build:bright && yarn run build:clapton",
+    "build:dark": "node src/dark/build",
+    "build:bright": "node src/bright/build",
+    "build:clapton": "node src/clapton/build"
   },
   "engines": {
     "vscode": "^1.26.0"
@@ -36,7 +39,7 @@
     ]
   },
   "devDependencies": {
-    "mustache": "^3.0.1"
+    "mustache": "^3.2.1"
   },
   "repository": {
     "type": "git",
