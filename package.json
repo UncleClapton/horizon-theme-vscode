@@ -1,6 +1,6 @@
 {
   "name": "horizon-clapton-vscode",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "author": "Jonathan Olaleye <j.olaleye.o@gmail.com>",
   "displayName": "Horizon Clapton",
   "description": "Fork of Horizon theme for my own uses",
@@ -8,13 +8,14 @@
   "license": "MIT",
   "icon": "logo.png",
   "scripts": {
+    "package": "yarn run build && vsce package",
     "build": "yarn run build:dark && yarn run build:bright && yarn run build:clapton",
     "build:dark": "node src/dark/build",
     "build:bright": "node src/bright/build",
     "build:clapton": "node src/clapton/build"
   },
   "engines": {
-    "vscode": "^1.26.0"
+    "vscode": "^1.46.0"
   },
   "galleryBanner": {
     "color": "#FCEAE5",
@@ -32,14 +33,46 @@
   "contributes": {
     "themes": [
       {
+        "label": "Horizon",
+        "uiTheme": "vs-dark",
+        "path": "./themes/horizon.json"
+      },
+      {
         "label": "Horizon Clapton",
         "uiTheme": "vs-dark",
         "path": "./themes/horizon-clapton.json"
+      },
+      {
+        "label": "Horizon Italic",
+        "uiTheme": "vs-dark",
+        "path": "./themes/horizon-italic.json"
+      },
+      {
+        "label": "Horizon Bold",
+        "uiTheme": "vs-dark",
+        "path": "./themes/horizon-bold.json"
+      },
+      {
+        "label": "Horizon Bright",
+        "uiTheme": "vs",
+        "path": "./themes/horizon-bright.json"
+      },
+      {
+        "label": "Horizon Bright Italic",
+        "uiTheme": "vs",
+        "path": "./themes/horizon-bright-italic.json"
+      },
+      {
+        "label": "Horizon Bright Bold",
+        "uiTheme": "vs",
+        "path": "./themes/horizon-bright-bold.json"
       }
     ]
   },
   "devDependencies": {
-    "mustache": "^3.2.1"
+    "@types/vscode": "^1.46.0",
+    "mustache": "^3.2.1",
+    "vsce": "^1.77.0"
   },
   "repository": {
     "type": "git",
