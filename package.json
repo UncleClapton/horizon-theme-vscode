@@ -1,19 +1,21 @@
 {
-  "name": "horizon-theme-vscode",
-  "version": "2.0.2",
+  "name": "horizon-clapton-vscode",
+  "version": "2.1.0",
   "author": "Jonathan Olaleye <j.olaleye.o@gmail.com>",
-  "displayName": "Horizon Theme",
-  "description": "A beautifully warm dual theme for Visual Studio Code",
-  "publisher": "jolaleye",
+  "displayName": "Horizon Clapton",
+  "description": "Fork of Horizon theme for my own uses",
+  "publisher": "UncleClapton",
   "license": "MIT",
   "icon": "logo.png",
   "scripts": {
-    "build": "npm run build:dark && npm run build:bright",
+    "package": "yarn run build && vsce package",
+    "build": "yarn run build:dark && yarn run build:bright && yarn run build:clapton",
     "build:dark": "node src/dark/build",
-    "build:bright": "node src/bright/build"
+    "build:bright": "node src/bright/build",
+    "build:clapton": "node src/clapton/build"
   },
   "engines": {
-    "vscode": "^1.26.0"
+    "vscode": "^1.46.0"
   },
   "galleryBanner": {
     "color": "#FCEAE5",
@@ -34,6 +36,11 @@
         "label": "Horizon",
         "uiTheme": "vs-dark",
         "path": "./themes/horizon.json"
+      },
+      {
+        "label": "Horizon Clapton",
+        "uiTheme": "vs-dark",
+        "path": "./themes/horizon-clapton.json"
       },
       {
         "label": "Horizon Italic",
@@ -63,14 +70,15 @@
     ]
   },
   "devDependencies": {
-    "mustache": "^3.0.1"
+    "@types/vscode": "^1.46.0",
+    "mustache": "^3.2.1",
+    "vsce": "^1.77.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jolaleye/horizon-theme-vscode"
+    "url": "https://github.com/UncleClapton/horizon-theme-vscode"
   },
-  "homepage": "https://horizontheme.com/",
   "bugs": {
-    "url": "https://github.com/jolaleye/horizon-theme-vscode/issues"
+    "url": "https://github.com/UncleClapton/horizon-theme-vscode/issues"
   }
 }

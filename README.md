@@ -25,12 +25,24 @@
   <img alt="preview" src="https://raw.githubusercontent.com/jolaleye/horizon-theme-vscode/master/preview.png" width="90%">
 </p>
 
+## Fork Information
+
+This fork holds my version of the Horizon theme.
+
+Since the original Horizon is now archived, I have kept the original themes in tact for prosparity, and derived my own version of the theme from dark-italic.
+
+**Note:** Only `horizon-clapton` will continue to be updated with new theming options as they appear, however updates will be slow. (~3-5 months).
+
+
 ## Installation
 
-1. Open the **Extensions** sidebar in VS Code
-2. Search for `Horizon Theme`
-3. Click **Install**
-4. Open the **Command Palette** with `Ctrl+Shift+P` or `⇧⌘P`
+1. Go to the [**Releases**](https://github.com/uncleclapton/horizon-theme-vscode/releases) page
+2. Download the latest `.visx` package
+3. Open the **Command Palette** with `Ctrl+Shift+P` or `⇧⌘P`
+4. Search for and run `Extensions: Install from VISX...`
+5. Select the downloaded `.visx` package from the file browser.
+6. Reload VSCode.
+4. Open the **Command Palette** again with `Ctrl+Shift+P` or `⇧⌘P`
 5. Select **Preferences: Color Theme** and choose a Horizon variant.
 6. Enjoy! 🎉 Also, check out some of the personalization options below...
 
