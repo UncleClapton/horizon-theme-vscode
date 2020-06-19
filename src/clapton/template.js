@@ -1,4 +1,4 @@
-const baseTemplate = require('../dark/template.json')
+const baseTemplate = require('../dark/template')
 
 module.exports = {
   ...baseTemplate,

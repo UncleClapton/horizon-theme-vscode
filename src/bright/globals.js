@@ -1,4 +1,4 @@
-{
+module.exports = {
   "syntax": {
     "amethyst": "#8A31B9",
     "crimson": "#DA103F",

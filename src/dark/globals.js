@@ -1,4 +1,4 @@
-{
+module.exports = {
   "syntax": {
     "lavender": "#B877DB",
     "cranberry": "#E95678",

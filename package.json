@@ -9,10 +9,7 @@
   "icon": "logo.png",
   "scripts": {
     "package": "yarn run build && vsce package",
-    "build": "yarn run build:dark && yarn run build:bright && yarn run build:clapton",
-    "build:dark": "node src/dark/build",
-    "build:bright": "node src/bright/build",
-    "build:clapton": "node src/clapton/build"
+    "build": "node src/build"
   },
   "engines": {
     "vscode": "^1.46.0"
@@ -35,37 +32,37 @@
       {
         "label": "Horizon",
         "uiTheme": "vs-dark",
-        "path": "./themes/horizon.json"
+        "path": "./dist/horizon.json"
       },
       {
         "label": "Horizon Clapton",
         "uiTheme": "vs-dark",
-        "path": "./themes/horizon-clapton.json"
+        "path": "./dist/horizon-clapton.json"
       },
       {
         "label": "Horizon Italic",
         "uiTheme": "vs-dark",
-        "path": "./themes/horizon-italic.json"
+        "path": "./dist/horizon-italic.json"
       },
       {
         "label": "Horizon Bold",
         "uiTheme": "vs-dark",
-        "path": "./themes/horizon-bold.json"
+        "path": "./dist/horizon-bold.json"
       },
       {
         "label": "Horizon Bright",
         "uiTheme": "vs",
-        "path": "./themes/horizon-bright.json"
+        "path": "./dist/horizon-bright.json"
       },
       {
         "label": "Horizon Bright Italic",
         "uiTheme": "vs",
-        "path": "./themes/horizon-bright-italic.json"
+        "path": "./dist/horizon-bright-italic.json"
       },
       {
         "label": "Horizon Bright Bold",
         "uiTheme": "vs",
-        "path": "./themes/horizon-bright-bold.json"
+        "path": "./dist/horizon-bright-bold.json"
       }
     ]
   },

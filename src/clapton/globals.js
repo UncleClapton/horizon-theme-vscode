@@ -1,4 +1,4 @@
-const baseGlobals = require('../dark/globals.json')
+const baseGlobals = require('../dark/globals')
 
 module.exports = {
   ...baseGlobals,
