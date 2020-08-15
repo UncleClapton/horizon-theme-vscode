@@ -68,6 +68,9 @@ module.exports = {
     "minimapGutter.modifiedBackground": "{{ ui.modified }}{{ alpha.highMed }}",
     "minimapGutter.deletedBackground": "{{ ui.negative }}{{ alpha.highMed }}",
 
+    // Plugins
+    "inlineparameters.annotationForeground": "{{ syntax.gray }}{{ alpha.medLow }}",
+    "inlineparameters.annotationBackground": "{{ ui.background }}{{ alpha.none }}"
   },
   "tokenColors": [
     {
@@ -276,7 +279,7 @@ module.exports = {
       }
     },
     {
-      "name": "Provieded variables",
+      "name": "Provided variables",
       "scope": "support.variable",
       "settings": {
         "foreground": "{{ syntax.cranberry }}{{ alpha.high }}"
