@@ -1,6 +1,6 @@
 {
   "name": "horizon-clapton-vscode",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "author": "Jonathan Olaleye <j.olaleye.o@gmail.com>",
   "displayName": "Horizon Clapton",
   "description": "Fork of Horizon theme for my own uses",
@@ -8,7 +8,8 @@
   "license": "MIT",
   "icon": "logo.png",
   "scripts": {
-    "package": "yarn run build && vsce package",
+    "vscode:prepublish": "yarn run build",
+    "package": "vsce package",
     "build": "node src/build"
   },
   "engines": {
